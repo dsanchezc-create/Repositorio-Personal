@@ -42,5 +42,6 @@ Comando sugerido de verificación de pureza del repo:
 
 #### Compilación
 ```bash
+cd Practicas/Practica_Calificada3-CC232
 cmake -S . -B build
 cmake --build build

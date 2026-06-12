@@ -1,0 +1,9 @@
+=== Ejecución de Pruebas Unitarias ===
+Comando: ./build/test_cookieselection
+
+Salida:
+Test 1 (Basico impar) exitoso.
+Test 2 (Paridad Par) exitoso.
+Test 3 (Duplicados) exitoso.
+Test 4 (Excepcion estructura vacia) exitoso.
+Todos los asserts (pruebas) pasaron correctamente.

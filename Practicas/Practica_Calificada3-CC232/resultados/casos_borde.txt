@@ -1,0 +1,6 @@
+=== Validación de Casos Borde ===
+Descripción: Se prueba la inserción de duplicados masivos y extracción en estructura vacía.
+
+1. Al pedir una mediana sin haber insertado galletas (enviando '#'), el bloque try-catch captura correctamente la excepción std::out_of_range.
+2. Al ingresar elementos duplicados consecutivos (ej. 5, 5, 5), la estructura de Heaps los procesa usando el operador de comparación sin generar ciclos infinitos ni perder el balance.
+3. Al existir una cantidad par de galletas (ej. 1, 2, 3, 4), el invariante asegura que se extraiga la mayor de las menores (3).

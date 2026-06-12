@@ -1,0 +1,12 @@
+=== Ejecución principal ===
+Comando: ./build/cookieselection
+Entrada proporcionada:
+1
+2
+3
+4
+#
+#
+Salida generada:
+3
+2

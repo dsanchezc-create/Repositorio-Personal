@@ -1,5 +1,6 @@
 #include <iostream>
 #include "CookieMedian.h"
+#include <cassert>
 
 int main() {
     std::cout << "=== Reto Obligatorio: Trazado de Heaps - Cookie Selection ===\n\n";
@@ -24,6 +25,19 @@ int main() {
     cm.debugHeaps();
 
     std::cout << "\n--> Extrayendo Mediana final (" << cm.getMedianAndRemove() << ")...\n";
+    cm.debugHeaps();
+
+    std::cout << "\n=== Modificacion en vivo ===\n";
+    cm.addCookie(100);
+    cm.addCookie(101);
+    cm.addCookie(102);
+    cm.debugHeaps();
+
+    int med = cm.getMedianAndRemove();
+    std::cout << "\n--> Mediana Extraida (" << med << ")...\n";
+    assert(med == 100); 
+
+    std::cout << "\n=== Assert pasado exitosamente. Heaps Actualizados: \n";
     cm.debugHeaps();
 
     return 0;
